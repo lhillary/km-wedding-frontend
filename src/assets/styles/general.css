@@ -1,0 +1,70 @@
+ /* Global Styles */
+:root {
+	--font-size-base: 16px;
+	--scale-factor: 1;
+}
+
+@media (max-width: 1200px) {
+	:root {
+	  --scale-factor: 0.95;
+	}
+}
+  
+@media (max-width: 992px) {
+	:root {
+		--scale-factor: 0.9;
+	}
+}
+  
+@media (max-width: 768px) {
+	:root {
+		--scale-factor: 0.85;
+	}
+}
+  
+@media (max-width: 576px) {
+	:root {
+	  --scale-factor: 0.8;
+	}
+}
+
+html {
+	font-size: var(--font-size-base);
+}
+
+html, body {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+}
+  
+body {
+	font-family: 'Cormorant Garamond', serif;
+	color: #333;
+	line-height: 1.6;
+	font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Cormorant Garamond', serif;
+	color: #9C182F !important;
+}
+
+.red {
+	color: #9C182F !important;
+}
+
+.neg-margin {
+	margin-top: -27px !important;
+}
+
+/* Custom Font Styles */
+.custom-font {
+	font-family: 'OldPines';
+	font-size: calc(5rem * var(--scale-factor));
+}
+
+.custom-font-2 {
+	font-family: 'OldPinesSwash';
+	font-size: calc(3rem * var(--scale-factor));
+}

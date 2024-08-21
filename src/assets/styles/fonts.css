@@ -1,0 +1,16 @@
+/* Custom Font Declaration */
+@font-face {
+	font-family: 'OldPines';
+	src: url('@/assets/fonts/old_pines-webfont.woff2') format('woff2'),
+		 url('@/assets/fonts/old_pines-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OldPinesSwash';
+	src: url('@/assets/fonts/old_pines_swash-webfont.woff2') format('woff2'),
+		 url('@/assets/fonts/old_pines_swash-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
