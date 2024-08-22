@@ -34,7 +34,7 @@
 	  const places = ref([
 		{
 			category: 'Coffee',
-			imagePath: '@/assets/images/water-street.jpg',
+			imagePath: new URL('@/assets/images/water-street.jpg', import.meta.url).href,
 			name: 'Water Street Coffee',
 			description: 'A local favorite offering artisanal coffee and a cozy atmosphere perfect for both quick stops and leisurely sips.',
 			link: '#'
@@ -97,15 +97,11 @@
 		}
 	  ])
   
-	  onMounted(async () => {
-		for (const place of places.value) {
-			try {
-				place.image = (await import(/* @vite-ignore */ `${place.imagePath}`)).default
-			} catch (error) {
-				console.error(`Failed to load image: ${place.imagePath}`, error)
-			}
-		}
-	  })
+	  onMounted(() => {
+		places.value.forEach(place => {
+			place.image = place.imagePath
+		})
+      })
   
 	  return {
 		places
