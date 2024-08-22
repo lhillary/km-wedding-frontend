@@ -34,63 +34,63 @@
 	  const places = ref([
 		{
 			category: 'Coffee',
-			imagePath: '/src/assets/images/water-street.jpg',
+			imagePath: '@/assets/images/water-street.jpg',
 			name: 'Water Street Coffee',
 			description: 'A local favorite offering artisanal coffee and a cozy atmosphere perfect for both quick stops and leisurely sips.',
 			link: '#'
 		},
 		{
 			category: 'Breakfast',
-			imagePath: '/src/assets/images/crows-nest.jpg',
+			imagePath: '@/assets/images/crows-nest.jpg',
 			name: "Crow's Nest",
 			description: 'Start your day right with hearty breakfast options and a charming ambiance at this beloved local eatery.',
 			link: '#'
 		},
 		{
 			category: 'Lunch',
-			imagePath: '/src/assets/images/hopcat.jpg',
+			imagePath: '@/assets/images/hopcat.jpg',
 			name: 'Hop Cat',
 			description: 'Enjoy a diverse menu of craft beers and delicious pub fare in a lively, casual setting.',
 			link: '#'
 		},
 		{
 			category: 'Dinner',
-			imagePath: '/src/assets/images/texas-corners.jpeg',
+			imagePath: '@/assets/images/texas-corners.jpeg',
 			name: 'Texas Corners Brewing Company',
 			description: 'Experience farm-to-table dining with a twist, featuring house-brewed beers and locally-sourced ingredients.',
 			link: '#'
 		},
 		{
 			category: 'Drinks and Snacks',
-			imagePath: '/src/assets/images/one-well.jpg',
+			imagePath: '@/assets/images/one-well.jpg',
 			name: 'One Well Brewing',
 			description: 'Unwind with unique craft beers and tasty bar snacks in a fun, laid-back brewery atmosphere.',
 			link: '#'
 		},
 		{
 			category: 'Drinks and Snacks',
-			imagePath: '/src/assets/images/grazing-table.jpeg',
+			imagePath: '@/assets/images/grazing-table.jpeg',
 			name: 'The Grazing Table',
 			description: 'Indulge in artisanal cheese boards and carefully curated wine selections in an intimate, stylish setting.',
 			link: '#'
 		},
 		{
 			category: 'Drinks and Snacks',
-			imagePath: '/src/assets/images/stamped-robin.jpeg',
+			imagePath: '@/assets/images/stamped-robin.jpeg',
 			name: 'The Stamped Robin',
 			description: 'Sip on expertly crafted cocktails and enjoy light bites in this trendy, modern wine and cocktail lounge.',
 			link: '#'
 		},
 		{
 			category: 'Drinks and Snacks',
-			imagePath: '/src/assets/images/waldos.webp',
+			imagePath: '@/assets/images/waldos.webp',
 			name: "Waldo's",
 			description: 'A classic campus hangout offering a wide range of drinks and satisfying pub grub in a relaxed environment.',
 			link: '#'
 		},
 		{
 			category: 'Dessert',
-			imagePath: '/src/assets/images/sweetwaters.jpg',
+			imagePath: '@/assets/images/sweetwaters.jpg',
 			name: "Sweetwater's Donut Mill",
 			description: 'Satisfy your sweet tooth with an array of freshly made, mouth-watering donuts and pastries.',
 			link: '#'
@@ -99,7 +99,11 @@
   
 	  onMounted(async () => {
 		for (const place of places.value) {
-		  place.image = (await import(/* @vite-ignore */ place.imagePath)).default
+			try {
+				place.image = (await import(/* @vite-ignore */ `${place.imagePath}`)).default
+			} catch (error) {
+				console.error(`Failed to load image: ${place.imagePath}`, error)
+			}
 		}
 	  })
   

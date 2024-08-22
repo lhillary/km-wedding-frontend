@@ -16,5 +16,8 @@ export default defineConfig({
         additionalData: `@import "@/assets/styles/fonts.css";`
       }
     }
-  }
+  },
+  build: {
+    assetsInlineLimit: 0,
+  },
 })
