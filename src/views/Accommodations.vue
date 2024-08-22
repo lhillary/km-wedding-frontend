@@ -33,35 +33,35 @@
 	  const accommodations = ref([
 		{
 		  name: 'Radisson Plaza Hotel',
-		  imagePath: '/src/assets/images/radisson.jpg',
+		  imagePath: new URL('/src/assets/images/radisson.jpg', import.meta.url).href,
 		  description: 'Located at Kalamazoo Center, this hotel is within walking distance of top area highlights. The bride and groom will be staying here.',
 		  link: 'https://radissonkzoo.com/'
 		},
 		{
 		  name: 'Hilton Garden Inn',
-		  imagePath: '/src/assets/images/hilton.jpg',
+		  imagePath: new URL('/src/assets/images/hilton.jpg', import.meta.url).href,
 		  description: 'Located in downtown Kalamazoo, this hotel is less than a mile from lots of local shops, great restaurants, parks, and entertainment.',
 		  link: 'https://www.hilton.com/en/hotels/azonegi-hilton-garden-inn-kalamazoo-downtown/'
 		},
 		{
 		  name: 'Home2 Suites by Hilton',
-		  imagePath: '/src/assets/images/home2.jpg',
+		  imagePath: new URL('/src/assets/images/home2.jpg', import.meta.url).href,
 		  description: 'Stay in the heart of the city with this hotel. It is less than a mile from top area highlights.',
 		  link: 'https://www.hilton.com/en/hotels/azokdht-home2-suites-kalamazoo-downtown/'
 		},
 		{
 		  name: 'Staybridge Suites',
-		  imagePath: '/src/assets/images/staybridge.jpg',
+		  imagePath: new URL('/src/assets/images/staybridge.jpg', import.meta.url).href,
 		  description: 'Conveniently located near the best attractions, including Miller Auditorium, Kalamazoo Civic Theatre and the Wings Stadium.',
 		  link: 'https://www.ihg.com/staybridge/hotels/us/en/kalamazoo/azosb/hoteldetail'
 		}
 	  ])
   
-	  onMounted(async () => {
-		for (const accommodation of accommodations.value) {
-		  accommodation.image = (await import(/* @vite-ignore */ accommodation.imagePath)).default
-		}
-	  })
+	  onMounted(() => {
+		places.value.forEach(place => {
+			place.image = place.imagePath
+		})
+      })
   
 	  return {
 		accommodations

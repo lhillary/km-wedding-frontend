@@ -41,56 +41,56 @@
 		},
 		{
 			category: 'Breakfast',
-			imagePath: '@/assets/images/crows-nest.jpg',
+			imagePath: new URL('@/assets/images/crows-nest.jpg', import.meta.url).href,
 			name: "Crow's Nest",
 			description: 'Start your day right with hearty breakfast options and a charming ambiance at this beloved local eatery.',
 			link: '#'
 		},
 		{
 			category: 'Lunch',
-			imagePath: '@/assets/images/hopcat.jpg',
+			imagePath: new URL('@/assets/images/hopcat.jpg', import.meta.url).href,
 			name: 'Hop Cat',
 			description: 'Enjoy a diverse menu of craft beers and delicious pub fare in a lively, casual setting.',
 			link: '#'
 		},
 		{
 			category: 'Dinner',
-			imagePath: '@/assets/images/texas-corners.jpeg',
+			imagePath: new URL('@/assets/images/texas-corners.jpeg', import.meta.url).href,
 			name: 'Texas Corners Brewing Company',
 			description: 'Experience farm-to-table dining with a twist, featuring house-brewed beers and locally-sourced ingredients.',
 			link: '#'
 		},
 		{
 			category: 'Drinks and Snacks',
-			imagePath: '@/assets/images/one-well.jpg',
+			imagePath: new URL('@/assets/images/one-well.jpg', import.meta.url).href,
 			name: 'One Well Brewing',
 			description: 'Unwind with unique craft beers and tasty bar snacks in a fun, laid-back brewery atmosphere.',
 			link: '#'
 		},
 		{
 			category: 'Drinks and Snacks',
-			imagePath: '@/assets/images/grazing-table.jpeg',
+			imagePath: new URL('@/assets/images/grazing-table.jpeg', import.meta.url).href,
 			name: 'The Grazing Table',
 			description: 'Indulge in artisanal cheese boards and carefully curated wine selections in an intimate, stylish setting.',
 			link: '#'
 		},
 		{
 			category: 'Drinks and Snacks',
-			imagePath: '@/assets/images/stamped-robin.jpeg',
+			imagePath: new URL('@/assets/images/stamped-robin.jpeg', import.meta.url).href,
 			name: 'The Stamped Robin',
 			description: 'Sip on expertly crafted cocktails and enjoy light bites in this trendy, modern wine and cocktail lounge.',
 			link: '#'
 		},
 		{
 			category: 'Drinks and Snacks',
-			imagePath: '@/assets/images/waldos.webp',
+			imagePath: new URL('@/assets/images/waldos.webp', import.meta.url).href,
 			name: "Waldo's",
 			description: 'A classic campus hangout offering a wide range of drinks and satisfying pub grub in a relaxed environment.',
 			link: '#'
 		},
 		{
 			category: 'Dessert',
-			imagePath: '@/assets/images/sweetwaters.jpg',
+			imagePath: new URL('@/assets/images/sweetwaters.jpg', import.meta.url).href,
 			name: "Sweetwater's Donut Mill",
 			description: 'Satisfy your sweet tooth with an array of freshly made, mouth-watering donuts and pastries.',
 			link: '#'
