@@ -6,7 +6,7 @@
 	  </div>
 	  <div class="footer-container">
 		<div class="footer-content">
-			<a href="#" class="uk-button uk-button-default admin-button plain-text">Admin Login</a>
+			<a href="https://dashboard.katie-mike-wedding.com" class="uk-button uk-button-default admin-button plain-text">Admin Login</a>
 			<p class="copyright">&copy; 2024 Katie & Mike. All rights reserved.</p>
 		</div>
 	  </div>
