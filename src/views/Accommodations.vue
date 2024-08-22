@@ -58,8 +58,8 @@
 	  ])
   
 	  onMounted(() => {
-		places.value.forEach(place => {
-			place.image = place.imagePath
+		accommodations.value.forEach(place => {
+			accommodation.image = accommodation.imagePath
 		})
       })
   
