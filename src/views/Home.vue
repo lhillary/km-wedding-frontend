@@ -20,10 +20,10 @@
 		  <img src="@/assets/images/trees-2.png" alt="Illustration" class="uk-width-1-3@m uk-margin-medium-top uk-margin-medium-bottom small-illu">
 		  <h2 class="uk-heading-small last-heading">Our Story</h2>
 		  <p class="uk-text-lead">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			Mike and Katie’s story began at work, where they bonded over their shared love for helping others and quickly discovered they had much more in common. From camping trips to kayaking adventures, they’ve built a life filled with outdoor fun and plenty of laughter. Their greatest adventure so far? Adopting Wesson, their four-legged, furry child.
 		  </p>
 		  <p class="uk-text-lead">
-			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			During a family vacation to Tennessee, surrounded by loved ones, Mike got down on one knee and asked Katie to be his forever adventure partner. Now, they’re excited to start the next chapter of their journey together, with Wesson by their side.
 		  </p>
 		</div>
 	  </div>
