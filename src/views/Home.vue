@@ -22,6 +22,11 @@
 		  <p class="uk-text-lead">
 			Mike and Katie’s story began at work, where they bonded over their shared love for helping others and quickly discovered they had much more in common. From camping trips to kayaking adventures, they’ve built a life filled with outdoor fun and plenty of laughter. Their greatest adventure so far? Adopting Wesson, their four-legged, furry child.
 		  </p>
+		  <div class="uk-text-center">
+			<div class="dog-photo">
+				<img src="@/assets/images/dog.jpg" alt="Happy Couple">
+			</div>
+		  </div>
 		  <p class="uk-text-lead">
 			During a family vacation to Tennessee, surrounded by loved ones, Mike got down on one knee and asked Katie to be his forever adventure partner. Now, they’re excited to start the next chapter of their journey together, with Wesson by their side.
 		  </p>
@@ -73,6 +78,36 @@
   }
 
   .couples-photo::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+	pointer-events: none; /* Ensures the shadow doesn't interfere with interactions */
+  }
+
+  .dog-photo {
+	position: relative;
+	display: inline-block;
+	max-width: 25%;
+	box-sizing: border-box;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	width: 100%;
+  }
+  
+  .dog-photo img {
+	width: 100%;
+	border: 10px solid white; 
+	box-shadow: 
+	  inset 0 0 0 2px rgba(0,0,0,0.1), 
+	  0 0 0 1px rgba(0,0,0,0.1); 
+	box-sizing: border-box;
+  }
+
+  .dog-photo::after {
 	content: '';
 	position: absolute;
 	top: 0;
