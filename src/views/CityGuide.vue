@@ -136,6 +136,7 @@ h4 {
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: 600;
+  display: inline-block !important;
 }
 
 .uk-card-body {
